@@ -1,5 +1,5 @@
 .panel{
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("kiki.jpg") fixed;
+  background-image: url("kiki.jpg") fixed;
 }
 p, label,a{
   color:white;
