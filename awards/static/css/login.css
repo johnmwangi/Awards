@@ -1,5 +1,9 @@
+.kiki{
+  background-color: green;
+}
+
 .panel{
-  background-image: url("kiki.jpg") fixed;
+  background-color: green;
 }
 p, label,a{
   color:white;
