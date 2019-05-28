@@ -9,7 +9,7 @@ A web application  where users can load projects review and also vote on then.
 
 ## By **John Mwangi**
 
-<img src="static/images/appawards.png" height=350>
+<img src="home/pictures/piic.png" height=350>
 
 ## Setup/Installation Requirements
 
