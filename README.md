@@ -21,8 +21,7 @@ This web-app allows a user to create a Profile,Category,Country,Technology,Color
 | Behaviour | Input | Output |
 | :---------------- | :---------------: | ------------------: |
 | Admin Authentication | **On demand** | Access Admin dashboard |
-| Admin Authentication | **On demand, verify emails before proceeding** | Access Admin dashboard |
-| Display all projects with grading | **Home page** | Clickable links to open live projects in different sites |
+| Display all projects with grading | **Directory** | Clickable links to open live projects in different sites |
 | To add an project  | **Through Admin dashboard and homepage** | Click on add and upload respectively|
 | To edit project  | **Through Admin dashboard** | Redirected to the  project form details and editing happens|
 | To delete an project  | **Through Admin dashboard** | click on project object and confirm by delete button|
