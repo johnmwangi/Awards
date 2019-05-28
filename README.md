@@ -4,7 +4,7 @@
 
 
 ## Description
-This web-app allows a user to create a Profile, and Projects that are all under his username allowing other users to vote for them and visit the particular projects site.
+A web application  where users can load projects review and also vote on then.
 
 ## Setup/Installation Requirements
 
