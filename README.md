@@ -1,4 +1,4 @@
-<!-- # Awwwards
+## Awards
 
 ##built by (John Mwangi)
 
@@ -8,7 +8,7 @@ This web-app allows a user to create a Profile,Category,Country,Technology,Color
 
 ## Setup/Installation Requirements
 
-* Live site can be accessed from the following link https://awwards-hassib.herokuapp.com/
+* Live site can be accessed from the following link
 
 
 ### Known Bugs
