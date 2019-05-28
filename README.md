@@ -1,4 +1,4 @@
-## Awards
+<!-- ## Awards
 
 ##built by (John Mwangi)
 
@@ -58,4 +58,4 @@ Then: User session is ended<br>
 * The source code is also contained within the folder containing this ReadMe with comments on the code thus third-party support can be offered.
 
 ## License
-Copyright (c)2018 **Awards John Mwangi** -->
+Copyright (c)2018 **Awards John Mwangi** --> -->
