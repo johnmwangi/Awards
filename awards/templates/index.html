@@ -62,7 +62,7 @@
   {% for winner in winners %}
   <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
     <div class="card" style="width: 40.2rem;">
-  <img class="card-img-top img-responsive" src="{{winner.landing_page.url}}" alt="Card image cap" responsive>
+  <img  class="card-img-top img-responsive" src="{{winner.landing_page.url}}" alt="Card image cap" responsive>
   <div class="card-body">
   <a href="/site/{{winner.id}}" style="color:black;text-decoration:none;">
     <h5 class="card-title" style="line-height:28px;">{{winner.title}}</h5>
@@ -92,7 +92,7 @@
   {% for nominee in nominees %}
   <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
     <div class="card" style="width: 40.2rem;">
-  <img class="card-img-top img-responsive" src="{{nominee.landing_page.url}}" alt="Card image cap" responsive>
+  <img class="img-fluid" class="card-img-top img-responsive" src="{{nominee.landing_page.url}}" alt="Card image cap" responsive>
   <div class="card-body">
     <a href="/site/{{nominee.id}}" style="color:black;text-decoration:none;">
       <h5 class="card-title" style="line-height:28px;">{{nominee.title}}</h5>
@@ -197,7 +197,7 @@
   {% for resource in resources2 %}
   <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
     <div class="card" style="width: 40.2rem;">
-  <img class="card-img-top img-responsive" src="{{resource.landing_page.url}}" alt="Card image cap" responsive>
+  <img height="300" class="card-img-top img-responsive" src="{{resource.landing_page.url}}" alt="Card image cap" responsive>
   <div class="card-body">
     <a href="/site/{{resource.id}}" style="color:black;text-decoration:none;">
       <h5 class="card-title" style="line-height:28px;">{{resource.title}}</h5>
