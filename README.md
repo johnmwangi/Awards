@@ -4,7 +4,7 @@
 
 
 ## Description
-This web-app allows a user to create a Profile,Category,Country,Technology,Color and Projects that are all under his username allowing other users to vote for them and visit the particular projects site.
+This web-app allows a user to create a Profile, and Projects that are all under his username allowing other users to vote for them and visit the particular projects site.
 
 ## Setup/Installation Requirements
 
