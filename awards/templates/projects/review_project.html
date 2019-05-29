@@ -1,17 +1,13 @@
-{% extends 'projects/base.html' %}
+{% extends 'base.html' %}
 {% load bootstrap3 %}
 
 {% block content %}
 {%for projo in project%}
-<div class="container-fluid">
-    <div class="jumbotron" style="background-image:url({{projo.project_image.url}}); height:70vh; margin-top: 6%">
-        <a class="btn btn-default" href="{{projo.url}}" target="_blank" style="float:left"><strong>view live project</strong></a>
-    </div>
-</div>
+
 <div class="container">
     <div class="projectdetails">
         <p class="ptitle">{{projo.title}}</p>
-        <p><strong>By:</strong><a href="{% url 'find_user' projo.profile %}">{{projo.profile}}</a> </p>
+
         <p> <strong>{{projo.date}}</strong></p>
     </div>
 {% endfor %}
@@ -34,10 +30,10 @@
             <br><br>
             {%if user.is_authenticated%}
             {%for proj in project%}
-            <form class="" action="/review_project/{{proj.id}}/" method="post">
+            <form class="" action="/site/comment/{{proj.id}}/" method="post">
               {%csrf_token%}
               {% bootstrap_form form%}
-              <button class="btn btn-outline-default" type="submit" name="button">Add a Comment</button>
+              <button class="btn btn-outline-default" type="submit" name="button">submit</button>
             </form>
             {%endfor%}
             {%else%}

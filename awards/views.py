@@ -1,6 +1,5 @@
 from django.shortcuts import render,redirect,get_object_or_404
-from .forms import NewProfileForm, NewProjectForm, NewCommentForm
-from .models import Profile, Projects, Comments
+from .models import Profile, Project, Comments
 from django.http  import HttpResponse,Http404,HttpResponseRedirect
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import login, authenticate
@@ -15,7 +14,7 @@ from django.core.mail import EmailMessage
 
 from django.core.exceptions import ObjectDoesNotExist
 from .models import categories,technologies,colors,countries,Project,Profile,Rating
-from .forms import ProjectForm,ProfileForm,RatingForm
+from .forms import ProjectForm,ProfileForm,RatingForm, NewCommentForm
 from decouple import config,Csv
 import datetime as dt
 from django.http import JsonResponse
@@ -170,7 +169,7 @@ def site(request,site_id):
 @login_required(login_url='/accounts/login/')
 
 def review_project(request,id):
-    project = Projects.objects.filter(id=id)
+    project = Project.objects.filter(id=id)
     current_user = request.user
 
     if request.method=='POST':
@@ -180,7 +179,7 @@ def review_project(request,id):
             form.user = request.user
             form.project_id = id
             form.save()
-            return redirect('review_project',id)
+            return redirect('comment',id)
     else:
         form=NewCommentForm()
 

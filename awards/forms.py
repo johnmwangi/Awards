@@ -21,7 +21,7 @@ class RatingForm(forms.ModelForm):
         model=Rating
         exclude=['profile','project','overall_score']
 
-class CommentsForm(forms.ModelForm):
+class NewCommentForm(forms.ModelForm):
     class Meta:
         model=Comments
-        exclude=['user','comment','project_id']
+        exclude=['user','project_id']
