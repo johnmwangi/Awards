@@ -1,4 +1,6 @@
 from django.shortcuts import render,redirect,get_object_or_404
+from .forms import NewProfileForm, NewProjectForm, NewCommentForm
+from .models import Profile, Projects, Comments
 from django.http  import HttpResponse,Http404,HttpResponseRedirect
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import login, authenticate

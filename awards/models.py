@@ -115,3 +115,8 @@ class Rating(models.Model):
     overall_score = models.IntegerField(blank=True,default=0)
     project = models.ForeignKey(Project,on_delete=models.CASCADE)
     profile = models.ForeignKey(Profile,on_delete=models.CASCADE)
+
+class Comments(models.Model):
+    user=models.ForeignKey(User,on_delete=models.CASCADE)
+    comment=models.TextField(max_length=150)
+    project_id=models.IntegerField(default=0)
