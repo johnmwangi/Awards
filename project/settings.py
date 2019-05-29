@@ -15,32 +15,9 @@ import django_heroku
 import dj_database_url
 from decouple import config,Csv
 
-
-# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/1.11/howto/static-files/
-STATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')
-STATIC_URL = '/static/'
-
-# Extra places for collectstatic to find static files.
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'y^jr^wu&80s)@oirp=+pnwlkdp1r^30(eb#1&926vyxw!ijbt6'
-
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-# ALLOWED_HOSTS = []
 MODE=config("MODE", default="dev")
 SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=False, cast=bool)
-
 # development
 if config('MODE')=="dev":
    DATABASES = {
@@ -67,6 +44,23 @@ DATABASES['default'].update(db_from_env)
 
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
+
+# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/1.11/howto/static-files/
+STATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')
+STATIC_URL = '/static/'
+
+# Extra places for collectstatic to find static files.
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+# Quick-start development settings - unsuitable for production
+# See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
+# SECURITY WARNING: keep the secret key used in production secret!
 # Application definition
 
 INSTALLED_APPS = [
@@ -180,6 +174,9 @@ STATICFILES_DIRS = [
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# Configure Django App for Heroku.
+django_heroku.settings(locals())
 
 LOGIN_REDIRECT_URL='index'
 

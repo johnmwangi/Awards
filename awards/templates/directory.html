@@ -15,39 +15,40 @@
 <div class="carousel-inner">
       <!-- <div class="landingpage" style="background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url({% static 'img/cocaine.png'%}) fixed;"> -->
       <div class="landingpage" >
-        <img src="{{caraousel.landing_page.url}}" class="landingpage-img">
+        <img src="{{"https://images.pexels.com/photos/1036936/pexels-photo-1036936.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"}}" class="landingpage-img">
         <div class="time">
           <p><span class="bold">Site of the day </span>    {{date}}</p>
         </div>
 
         <div class="header">
- <a href="/site/{{caraousel.id}}" style="color:white;text-decoration:none;">
-            <h1>{{caraousel.title}}</h1>
-          </a>        </div>
+        <a href="/site/{{caraousel.id}}" style="color:white;text-decoration:none;">
+            <h1>{{AWAARDS}}</h1>
+          </a>
+        </div>
         <div class="page-body">
-          <p>BY <span style="color:#49c5b6;text-transform:uppercase;">{{caraousel.username}}</span> FROM <span class="bold">{{caraousel.country}}</span> WITH 0.75</p>
+          <p>AWAARDS</p>
         </div>
 
-          <div class="middle">
+        <!-- <div class="middle">
 
-            <div class="circle" id="circle-a">
-            	<strong></strong>
-              <p class="rating">DESIGN</p>
-            </div>
-            <div class="circle" id="circle-b">
-            	<strong></strong>
-              <p class="rating">USABILITY</p>
-            </div>
-            <div class="circle" id="circle-c">
-              <strong></strong>
-              <p class="rating">CREATIVITY</p>
-            </div>
-            <div class="circle" id="circle-d">
-            	<strong></strong>
-              <p class="rating">CONTENT</p>
-            </div>
-
+          <div class="circle" id="circle-a">
+            <strong></strong>
+            <p class="rating">DESIGN</p>
           </div>
+          <div class="circle" id="circle-b">
+            <strong></strong>
+            <p class="rating">USABILITY</p>
+          </div>
+          <div class="circle" id="circle-c">
+            <strong></strong>
+            <p class="rating">CREATIVITY</p>
+          </div>
+          <div class="circle" id="circle-d">
+            <strong></strong>
+            <p class="rating">CONTENT</p>
+          </div> -->
+
+        </div>
       </div>
     </div>
 

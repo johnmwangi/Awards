@@ -65,6 +65,12 @@ strong {
     font-weight: bold;
 }
 
+.p{
+
+font-family: 'Libre Baskerville', serif;
+
+}
+
 .page-body {
     color: white;
     position: absolute;
