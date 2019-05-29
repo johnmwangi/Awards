@@ -13,7 +13,7 @@ A web application  where users can load projects review and also vote on then.
 
 ## Setup/Installation Requirements
 
-* Live site can be accessed from the following link(https://awaardd.herokuapp.com/directory)
+* Live site can be accessed from the following link(https://awaardd.herokuapp.com/)
 
 
 ### Known Bugs
