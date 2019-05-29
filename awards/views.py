@@ -168,6 +168,30 @@ def site(request,site_id):
     return render(request,"site.html",{"project":project,"profile":profile,"ratings":ratings,"form":form})
 
 @login_required(login_url='/accounts/login/')
+
+def review_project(request,id):
+    project = Projects.objects.filter(id=id)
+    current_user = request.user
+
+    if request.method=='POST':
+        form = NewCommentForm(request.POST)
+        if form.is_valid():
+            form = form.save(commit=False)
+            form.user = request.user
+            form.project_id = id
+            form.save()
+            return redirect('review_project',id)
+    else:
+        form=NewCommentForm()
+
+    try:
+        user_comment=Comments.objects.filter(project_id=id)
+    except Exception as e:
+        raise Http404()
+
+    return render(request, 'projects/review_project.html',{'project':project, 'current_user': current_user,  'form':form, 'comments':user_comment })
+
+
 def search_results(request):
     current_user = request.user
     profile =Profile.objects.get(username=current_user)
