@@ -1,15 +1,15 @@
 ## Awards
 
-##built by (John Mwangi)
+#### built by **John Mwangi**
 
 
 ## Description
 A web application  where users can load projects review and also vote on then.
 
 
-## By **John Mwangi**
+#### **Site**
 
-<img src="home/pictures/piic.png" height=350>
+<img src="static/images/appawards.png" height=350>
 
 ## Setup/Installation Requirements
 
