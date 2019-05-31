@@ -7,10 +7,6 @@
 A web application  where users can load projects review and also vote on then.
 
 
-#### **Site**
-
-<img src = "static/img piic.png" height="350">
-
 ## Setup/Installation Requirements
 
 * Live site can be accessed from the link (https://awaardd.herokuapp.com/)
